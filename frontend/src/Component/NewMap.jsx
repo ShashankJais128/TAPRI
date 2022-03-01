@@ -124,10 +124,12 @@ function NewMap() {
   };
 
   const returnMarkerImage = (i) => {
-    if (i.category === 'TEA' || i.category === 'FOOD') {
+    if ( i.category === 'FOOD') {
       return <FoodStallsMarker />;
     } else if (i.category === 'GROCERY') {
       return <GroceryShopsMarker />;
+    } else if(i.category === 'TEA'){
+      return <TeaStallsMarker />;
     }
   };
 
